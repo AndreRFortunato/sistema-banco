@@ -1,0 +1,63 @@
+construir projeto spring do zero:
+banco
+
+tenha:
+criação de conta
+transação
+debito
+empréstimo
+
+
+
+10/10/2024
+
+//DO LIST
+classe de associação/auxiliar composta
+Criar entidade Parcelas(quantidade, valor,(subtotal)) entre empréstimo e pagamentoEmprestimo(total)
+
+
+estou criando um sistema de banco, utilizando spring boot, java, maven, postman e visual studio code, criei ja as entidades client, account e transacao, com seus respectivos resources e services. Agora gostaria de criar a parte de emprestimo do banco, crie a parte de emprestimo em 3 partes, 1ªparte Emprestimo associada ao client, 2ªparte PagamentoEmprestimo associada com account e 3ªparte Parcelas sendo uma classe auxiliar composta entre emprestimo e pagamentoEmprestimo.
+
+emprestimos/createDTO
+{
+    "clientId": 1,
+    "amount": 1000,
+    "startDate": "2024-10-10T20:00:00Z",
+    "endDate": "2025-10-10T20:00:00Z"
+}
+pagamentos/createDTO
+{
+    "accountId": 1,
+    "emprestimoId": 1,
+    "paymentAmount": "200"
+}
+/clients-accounts
+{
+    "clientName": "Paulo",
+    "cpf": "54687921358",
+    "clientEmail": "pedropaulo@gmail.com",
+    "telefone": "19985426758",
+    "accountNumber": "005",
+    "tipo": 1,
+    "initialBalance": "25000"
+}
+
+diagrama de entidade relacionamento
+
+//Formatação data
+@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
+
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+para criação incremental
+
+public interface ClientRepository extends JpaRepository<Client, Long>{
+						<Tipo da entidade, Tipo do ID>
+
+class de config
+classe auxiliar/seeding(popular o banco de dados)
+
+
+//Layers
+controlador
+serviços
+repositórios/banco de dados

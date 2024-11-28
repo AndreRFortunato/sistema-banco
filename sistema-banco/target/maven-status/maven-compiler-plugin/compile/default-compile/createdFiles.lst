@@ -1,0 +1,17 @@
+com\banco\sistema_banco\resources\AccountResource.class
+com\banco\sistema_banco\entities\enums\Tipo.class
+com\banco\sistema_banco\config\TestConfig.class
+com\banco\sistema_banco\repositories\TransacaoRepository.class
+com\banco\sistema_banco\services\AccountService.class
+com\banco\sistema_banco\dto\ClientUpdateDTO.class
+com\banco\sistema_banco\dto\AccountUpdateDTO.class
+com\banco\sistema_banco\dto\ClientCreateDTO.class
+com\banco\sistema_banco\dto\AccountCreateDTO.class
+com\banco\sistema_banco\entities\enums\TipoTransacao.class
+com\banco\sistema_banco\entities\Account.class
+com\banco\sistema_banco\entities\Client.class
+com\banco\sistema_banco\resources\ClientResource.class
+com\banco\sistema_banco\entities\Transacao.class
+com\banco\sistema_banco\repositories\AccountRepository.class
+com\banco\sistema_banco\repositories\ClientRepository.class
+com\banco\sistema_banco\SistemaBancoApplication.class

@@ -1,0 +1,66 @@
+transações
+
+1. Debito
+
+    Método: POST
+    URL: http://localhost:8080/transacoes/debito/{accountId}
+    Exemplo: Se o accountId for 1 e o valor for 100.0, a URL será:
+
+    bash
+
+    http://localhost:8080/transacoes/debito/1?valor=100.0
+
+    Headers: Content-Type: application/json
+    Body: Não é necessário, pois o valor é passado como parâmetro na URL.
+
+2. Saque
+
+    Método: POST
+    URL: http://localhost:8080/transacoes/saque/{accountId}
+    Exemplo: Para sacar 200.0 da conta 1, a URL seria:
+
+    bash
+
+    http://localhost:8080/transacoes/saque/1?valor=200.0
+
+    Headers: Content-Type: application/json
+    Body: Não é necessário, pois o valor é passado como parâmetro na URL.
+
+3. PIX
+
+    Método: POST
+    URL: http://localhost:8080/transacoes/pix
+    Exemplo: Para enviar um PIX de 300.0 da conta 1 para a conta 2:
+
+    bash
+
+    http://localhost:8080/transacoes/pix?origemId=1&destinoId=2&valor=300.0
+
+    Headers: Content-Type: application/json
+    Body: Não é necessário, os parâmetros são passados na URL.
+
+4. TED
+
+    Método: POST
+    URL: http://localhost:8080/transacoes/ted
+    Exemplo: Para transferir 500.0 da conta 1 para a conta 2 via TED:
+
+    bash
+
+    http://localhost:8080/transacoes/ted?origemId=1&destinoId=2&valor=500.0
+
+    Headers: Content-Type: application/json
+    Body: Não é necessário, os parâmetros são passados na URL.
+
+5. DOC
+
+    Método: POST
+    URL: http://localhost:8080/transacoes/doc
+    Exemplo: Para transferir 150.0 da conta 1 para a conta 2 via DOC:
+
+    bash
+
+http://localhost:8080/transacoes/doc?origemId=1&destinoId=2&valor=150.0
+
+Headers: Content-Type: application/json
+Body: Não é necessário, os parâmetros são passados na URL.
